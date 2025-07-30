@@ -73,6 +73,17 @@
       }
     }
   </style>
+  <script>
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const u = params.get('u');
+    const redirectUrl = u && u.trim() ? u : 'w880m.info/IVCH3X7';
+    const link = document.getElementById('join-now');
+    if (link) {
+      link.href = redirectUrl;
+    }
+  })();
+</script>
 </head>
 <body>
   <header>
@@ -96,7 +107,7 @@
       <p>Top-rated by players for fairness and transparency.</p>
     </div>
 
-    <a href="http://w880m.info/IVCH3X7" class="cta-button">🎲 Join Now</a>
+    <a id="join-now" href="#" class="cta-button">🎲 Join Now</a>
   </div>
 
   <footer>
