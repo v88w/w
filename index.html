@@ -77,10 +77,10 @@
   (function () {
     const params = new URLSearchParams(window.location.search);
     const u = params.get('u');
-    const redirectUrl = u && u.trim() ? u : 'w880m.info/IVCH3X7';
+    const redirectUrl = u && u.trim() ? u : '';
     const link = document.getElementById('join-now');
-    if (link) {
-      link.href = redirectUrl;
+    if (redirectUrl && link) {
+      link.href = "http://"+redirectUrl;
     }
   })();
 </script>
@@ -107,7 +107,7 @@
       <p>Top-rated by players for fairness and transparency.</p>
     </div>
 
-    <a id="join-now" href="#" class="cta-button">🎲 Join Now</a>
+    <a id="join-now" href="#" class="cta-button" href="http://w880m.info/IVCH3X7">🎲 Join Now</a>
   </div>
 
   <footer>
